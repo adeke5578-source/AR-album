@@ -8,10 +8,11 @@
   <body style="margin:0;overflow:hidden;">
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
       <a-marker preset="hiro">
-        <a-video src="#video1" width="1" height="0.6" autoplay="true" loop="false" position="0 0 0"></a-video>
+        <a-video src="#video1" width="1" height="0.6" autoplay loop muted playsinline webkit-playsinline position="0 0 0"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
     <video id="video1" src="video1.mp4" crossorigin="anonymous" webkit-playsinline playsinline></video>
   </body>
+
 </html>
